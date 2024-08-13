@@ -24,14 +24,41 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ex1"
         options={{
-          title: 'Explore',
+          title: 'EX-1',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={'checkbox'} color={color} />
           ),
         }}
       />
+        <Tabs.Screen
+            name="ex2"
+            options={{
+                title: 'EX-2',
+                tabBarIcon: ({ color, focused }) => (
+                    <TabBarIcon name={'search'} color={color} />
+                ),
+            }}
+        />
+        <Tabs.Screen
+            name="ex3"
+            options={{
+                title: 'EX-3',
+                tabBarIcon: ({ color, focused }) => (
+                    <TabBarIcon name={'square'} color={color} />
+                ),
+            }}
+        />
+        <Tabs.Screen
+            name="ex4"
+            options={{
+                title: 'EX-4',
+                tabBarIcon: ({ color, focused }) => (
+                    <TabBarIcon name={'image'} color={color} />
+                ),
+            }}
+        />
     </Tabs>
   );
 }
